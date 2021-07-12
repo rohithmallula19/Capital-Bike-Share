@@ -1,0 +1,1811 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0326.1623                               -->
+<workbook original-version='18.1' source-build='2020.1.2 (20201.20.0326.1623)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='newday(1)' inline='true' name='federated.1l38u440v1hxnb1d57jly0r6hwtv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='newday(1)' name='textscan.04z1g8l1l1z9yc1f7bbjv1ha6q4q'>
+            <connection class='textscan' directory='C:/Users/itzro/Downloads' filename='newday(1).csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.04z1g8l1l1z9yc1f7bbjv1ha6q4q' name='newday(1).csv' table='[newday(1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='instant' ordinal='1' />
+            <column datatype='date' name='dteday' ordinal='2' />
+            <column datatype='integer' name='season' ordinal='3' />
+            <column datatype='integer' name='yr' ordinal='4' />
+            <column datatype='integer' name='mnth' ordinal='5' />
+            <column datatype='integer' name='holiday' ordinal='6' />
+            <column datatype='integer' name='weekday' ordinal='7' />
+            <column datatype='integer' name='workingday' ordinal='8' />
+            <column datatype='integer' name='weathersit' ordinal='9' />
+            <column datatype='real' name='temp' ordinal='10' />
+            <column datatype='real' name='atemp' ordinal='11' />
+            <column datatype='real' name='hum' ordinal='12' />
+            <column datatype='real' name='windspeed' ordinal='13' />
+            <column datatype='integer' name='casual' ordinal='14' />
+            <column datatype='integer' name='registered' ordinal='15' />
+            <column datatype='integer' name='cnt' ordinal='16' />
+            <column datatype='real' name='avg_duration' ordinal='17' />
+            <column datatype='string' name='pop_station' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>instant</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[instant]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>instant</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dteday</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[dteday]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>dteday</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yr]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>yr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mnth]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>mnth</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>holiday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[holiday]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>holiday</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weekday]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>weekday</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workingday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[workingday]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>workingday</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weathersit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weathersit]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>weathersit</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>temp</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>atemp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[atemp]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>atemp</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hum</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hum]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>hum</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>windspeed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[windspeed]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>windspeed</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>casual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[casual]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>casual</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>registered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[registered]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>registered</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cnt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cnt]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>cnt</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_duration]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>avg_duration</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop_station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pop_station]</local-name>
+            <parent-name>[newday(1).csv]</parent-name>
+            <remote-alias>pop_station</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Hum (bin)' datatype='integer' name='[Hum (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-3' formula='[hum]' peg='0' size='0.034' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Atemp' datatype='real' name='[atemp]' role='measure' type='quantitative' />
+      <column caption='Avg Duration' datatype='real' name='[avg_duration]' role='measure' type='quantitative' />
+      <column caption='Casual' datatype='integer' name='[casual]' role='measure' type='quantitative' />
+      <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+      <column caption='Dteday' datatype='date' name='[dteday]' role='dimension' type='ordinal' />
+      <column caption='Holiday' datatype='integer' name='[holiday]' role='measure' type='quantitative' />
+      <column caption='Hum' datatype='real' name='[hum]' role='measure' type='quantitative' />
+      <column caption='Instant' datatype='integer' name='[instant]' role='measure' type='quantitative' />
+      <column caption='Mnth' datatype='integer' name='[mnth]' role='measure' type='quantitative' />
+      <column caption='Pop Station' datatype='string' name='[pop_station]' role='dimension' type='nominal' />
+      <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+      <column caption='Temp' datatype='real' name='[temp]' role='measure' type='quantitative' />
+      <column caption='Weathersit' datatype='integer' name='[weathersit]' role='measure' type='quantitative' />
+      <column caption='Weekday' datatype='integer' name='[weekday]' role='measure' type='quantitative' />
+      <column caption='Windspeed' datatype='real' name='[windspeed]' role='measure' type='quantitative' />
+      <column caption='Workingday' datatype='integer' name='[workingday]' role='measure' type='quantitative' />
+      <column caption='Yr' datatype='integer' name='[yr]' role='dimension' type='quantitative' />
+      <column-instance column='[casual]' derivation='Count' name='[cnt:casual:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[registered]' derivation='Count' name='[cnt:registered:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[windspeed]' derivation='Count' name='[cnt:windspeed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[atemp]' derivation='Sum' name='[sum:atemp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[avg_duration]' derivation='Sum' name='[sum:avg_duration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[casual]' derivation='Sum' name='[sum:casual:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[holiday]' derivation='Sum' name='[sum:holiday:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[hum]' derivation='Sum' name='[sum:hum:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[instant]' derivation='Sum' name='[sum:instant:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mnth]' derivation='Sum' name='[sum:mnth:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[registered]' derivation='Sum' name='[sum:registered:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[season]' derivation='Sum' name='[sum:season:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[temp]' derivation='Sum' name='[sum:temp:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[weathersit]' derivation='Sum' name='[sum:weathersit:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[weekday]' derivation='Sum' name='[sum:weekday:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[windspeed]' derivation='Sum' name='[sum:windspeed:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[workingday]' derivation='Sum' name='[sum:workingday:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[dteday]' derivation='Year' name='[yr:dteday:ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.312906' measure-ordering='alphabetic' measure-percentage='0.687094' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[:Measure Names]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:F1:qk]&quot;</bucket>
+            </map>
+            <map to='asterisk'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:weekday:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[cnt:registered:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:atemp:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:registered:qk]&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[cnt:windspeed:qk]&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:holiday:qk]&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:windspeed:qk]&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:instant:qk]&quot;</bucket>
+            </map>
+            <map to='left-triangle'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:mnth:qk]&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[cnt:casual:qk]&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:casual:qk]&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:temp:qk]&quot;</bucket>
+            </map>
+            <map to='right-triangle'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:avg_duration:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:season:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:cnt:qk]&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:weathersit:qk]&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:hum:qk]&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:workingday:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[yr:dteday:ok]&#10;[:Measure Names]' palette='miller_stone_10_0' type='palette'>
+            <map to='#4f6980'>
+              <multibucket>
+                <bucket>2011</bucket>
+                <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:cnt:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#638b66'>
+              <multibucket>
+                <bucket>2012</bucket>
+                <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:temp:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#849db1'>
+              <multibucket>
+                <bucket>2011</bucket>
+                <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:temp:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#a2ceaa'>
+              <multibucket>
+                <bucket>2012</bucket>
+                <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:cnt:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[cnt:registered:qk]&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[cnt:windspeed:qk]&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:registered:qk]&quot;</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:windspeed:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:avg_duration:qk]&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:casual:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:cnt:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:temp:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='2012Q1-capitalbikeshare-tripdata' inline='true' name='federated.1el3l0x1vurdfu10bmeqt0kvlfsd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2012Q1-capitalbikeshare-tripdata' name='textscan.0ipqmzr0fcbdkw14vmrzw17rfa36'>
+            <connection class='textscan' directory='C:/Users/itzro/Downloads/2012-capitalbikeshare-tripdata' filename='2012Q1-capitalbikeshare-tripdata.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation all='true' name='2012Q1-capitalbikeshare-tripdata.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Duration' />
+            <column datatype='datetime' name='Start date' />
+            <column datatype='datetime' name='End date' />
+            <column datatype='integer' name='Start station number' />
+            <column datatype='string' name='Start station' />
+            <column datatype='integer' name='End station number' />
+            <column datatype='string' name='End station' />
+            <column datatype='string' name='Bike number' />
+            <column datatype='string' name='Member type' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.0ipqmzr0fcbdkw14vmrzw17rfa36' name='2012Q1-capitalbikeshare-tripdata.csv' table='[2012Q1-capitalbikeshare-tripdata#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Duration' ordinal='0' />
+              <column datatype='datetime' name='Start date' ordinal='1' />
+              <column datatype='datetime' name='End date' ordinal='2' />
+              <column datatype='integer' name='Start station number' ordinal='3' />
+              <column datatype='string' name='Start station' ordinal='4' />
+              <column datatype='integer' name='End station number' ordinal='5' />
+              <column datatype='string' name='End station' ordinal='6' />
+              <column datatype='string' name='Bike number' ordinal='7' />
+              <column datatype='string' name='Member type' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0ipqmzr0fcbdkw14vmrzw17rfa36' name='2012Q2-capitalbikeshare-tripdata.csv' table='[2012Q2-capitalbikeshare-tripdata#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Duration' ordinal='0' />
+              <column datatype='datetime' name='Start date' ordinal='1' />
+              <column datatype='datetime' name='End date' ordinal='2' />
+              <column datatype='integer' name='Start station number' ordinal='3' />
+              <column datatype='string' name='Start station' ordinal='4' />
+              <column datatype='integer' name='End station number' ordinal='5' />
+              <column datatype='string' name='End station' ordinal='6' />
+              <column datatype='string' name='Bike number' ordinal='7' />
+              <column datatype='string' name='Member type' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0ipqmzr0fcbdkw14vmrzw17rfa36' name='2012Q3-capitalbikeshare-tripdata.csv' table='[2012Q3-capitalbikeshare-tripdata#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Duration' ordinal='0' />
+              <column datatype='datetime' name='Start date' ordinal='1' />
+              <column datatype='datetime' name='End date' ordinal='2' />
+              <column datatype='integer' name='Start station number' ordinal='3' />
+              <column datatype='string' name='Start station' ordinal='4' />
+              <column datatype='integer' name='End station number' ordinal='5' />
+              <column datatype='string' name='End station' ordinal='6' />
+              <column datatype='string' name='Bike number' ordinal='7' />
+              <column datatype='string' name='Member type' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0ipqmzr0fcbdkw14vmrzw17rfa36' name='2012Q4-capitalbikeshare-tripdata.csv' table='[2012Q4-capitalbikeshare-tripdata#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Duration' ordinal='0' />
+              <column datatype='datetime' name='Start date' ordinal='1' />
+              <column datatype='datetime' name='End date' ordinal='2' />
+              <column datatype='integer' name='Start station number' ordinal='3' />
+              <column datatype='string' name='Start station' ordinal='4' />
+              <column datatype='integer' name='End station number' ordinal='5' />
+              <column datatype='string' name='End station' ordinal='6' />
+              <column datatype='string' name='Bike number' ordinal='7' />
+              <column datatype='string' name='Member type' ordinal='8' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Start date]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Start date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[End date]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>End date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start station number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Start station number]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Start station number</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Start station]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Start station</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End station number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[End station number]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>End station number</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[End station]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>End station</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bike number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bike number]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Bike number</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Member type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Member type]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Member type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.544104' measure-ordering='alphabetic' measure-percentage='0.455896' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='2012Q1-capitalbikeshare-tripdata.csv++ (Multiple Connections)' inline='true' name='federated.1wlsm9p1lntwem18atbes0c6n5kt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2011-capitalbikeshare-tripdata' name='textscan.0midhxu18ur0rv0zuud3p09lisq4'>
+            <connection class='textscan' directory='C:/Users/itzro/Downloads/2011-capitalbikeshare-tripdata' filename='2011-capitalbikeshare-tripdata.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='2012Q1-capitalbikeshare-tripdata' name='textscan.0hiavbx1i6jki61gjip7705a2bj6'>
+            <connection class='textscan' directory='C:/Users/itzro/Downloads/2012-capitalbikeshare-tripdata' filename='2012Q1-capitalbikeshare-tripdata.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='newday' name='textscan.0axdfxl1brxz7x19ypfwz0uzi3en'>
+            <connection class='textscan' directory='C:/Users/itzro/Downloads' filename='newday.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation join='full' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[2012Q1-capitalbikeshare-tripdata.csv+].[End date]' />
+              <expression op='[newday.csv].[dteday]' />
+            </expression>
+          </clause>
+          <relation join='full' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[2011-capitalbikeshare-tripdata.csv].[Bike number]' />
+                <expression op='[2012Q1-capitalbikeshare-tripdata.csv+].[Bike number]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0midhxu18ur0rv0zuud3p09lisq4' name='2011-capitalbikeshare-tripdata.csv' table='[2011-capitalbikeshare-tripdata#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='Duration' ordinal='0' />
+                <column datatype='datetime' name='Start date' ordinal='1' />
+                <column datatype='datetime' name='End date' ordinal='2' />
+                <column datatype='integer' name='Start station number' ordinal='3' />
+                <column datatype='string' name='Start station' ordinal='4' />
+                <column datatype='integer' name='End station number' ordinal='5' />
+                <column datatype='string' name='End station' ordinal='6' />
+                <column datatype='string' name='Bike number' ordinal='7' />
+                <column datatype='string' name='Member type' ordinal='8' />
+              </columns>
+            </relation>
+            <relation all='true' name='2012Q1-capitalbikeshare-tripdata.csv+' type='union'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='Duration' />
+                <column datatype='datetime' name='Start date' />
+                <column datatype='datetime' name='End date' />
+                <column datatype='integer' name='Start station number' />
+                <column datatype='string' name='Start station' />
+                <column datatype='integer' name='End station number' />
+                <column datatype='string' name='End station' />
+                <column datatype='string' name='Bike number' />
+                <column datatype='string' name='Member type' />
+                <column datatype='string' name='Table Name' />
+              </columns>
+              <relation connection='textscan.0hiavbx1i6jki61gjip7705a2bj6' name='2012Q1-capitalbikeshare-tripdata.csv' table='[2012Q1-capitalbikeshare-tripdata#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Duration' ordinal='0' />
+                  <column datatype='datetime' name='Start date' ordinal='1' />
+                  <column datatype='datetime' name='End date' ordinal='2' />
+                  <column datatype='integer' name='Start station number' ordinal='3' />
+                  <column datatype='string' name='Start station' ordinal='4' />
+                  <column datatype='integer' name='End station number' ordinal='5' />
+                  <column datatype='string' name='End station' ordinal='6' />
+                  <column datatype='string' name='Bike number' ordinal='7' />
+                  <column datatype='string' name='Member type' ordinal='8' />
+                </columns>
+              </relation>
+              <relation connection='textscan.0hiavbx1i6jki61gjip7705a2bj6' name='2012Q2-capitalbikeshare-tripdata.csv' table='[2012Q2-capitalbikeshare-tripdata#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Duration' ordinal='0' />
+                  <column datatype='datetime' name='Start date' ordinal='1' />
+                  <column datatype='datetime' name='End date' ordinal='2' />
+                  <column datatype='integer' name='Start station number' ordinal='3' />
+                  <column datatype='string' name='Start station' ordinal='4' />
+                  <column datatype='integer' name='End station number' ordinal='5' />
+                  <column datatype='string' name='End station' ordinal='6' />
+                  <column datatype='string' name='Bike number' ordinal='7' />
+                  <column datatype='string' name='Member type' ordinal='8' />
+                </columns>
+              </relation>
+              <relation connection='textscan.0hiavbx1i6jki61gjip7705a2bj6' name='2012Q3-capitalbikeshare-tripdata.csv' table='[2012Q3-capitalbikeshare-tripdata#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Duration' ordinal='0' />
+                  <column datatype='datetime' name='Start date' ordinal='1' />
+                  <column datatype='datetime' name='End date' ordinal='2' />
+                  <column datatype='integer' name='Start station number' ordinal='3' />
+                  <column datatype='string' name='Start station' ordinal='4' />
+                  <column datatype='integer' name='End station number' ordinal='5' />
+                  <column datatype='string' name='End station' ordinal='6' />
+                  <column datatype='string' name='Bike number' ordinal='7' />
+                  <column datatype='string' name='Member type' ordinal='8' />
+                </columns>
+              </relation>
+              <relation connection='textscan.0hiavbx1i6jki61gjip7705a2bj6' name='2012Q4-capitalbikeshare-tripdata.csv' table='[2012Q4-capitalbikeshare-tripdata#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Duration' ordinal='0' />
+                  <column datatype='datetime' name='Start date' ordinal='1' />
+                  <column datatype='datetime' name='End date' ordinal='2' />
+                  <column datatype='integer' name='Start station number' ordinal='3' />
+                  <column datatype='string' name='Start station' ordinal='4' />
+                  <column datatype='integer' name='End station number' ordinal='5' />
+                  <column datatype='string' name='End station' ordinal='6' />
+                  <column datatype='string' name='Bike number' ordinal='7' />
+                  <column datatype='string' name='Member type' ordinal='8' />
+                </columns>
+              </relation>
+            </relation>
+          </relation>
+          <relation connection='textscan.0axdfxl1brxz7x19ypfwz0uzi3en' name='newday.csv' table='[newday#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='instant' ordinal='1' />
+              <column datatype='date' name='dteday' ordinal='2' />
+              <column datatype='integer' name='season' ordinal='3' />
+              <column datatype='integer' name='yr' ordinal='4' />
+              <column datatype='integer' name='mnth' ordinal='5' />
+              <column datatype='integer' name='holiday' ordinal='6' />
+              <column datatype='integer' name='weekday' ordinal='7' />
+              <column datatype='integer' name='workingday' ordinal='8' />
+              <column datatype='integer' name='weathersit' ordinal='9' />
+              <column datatype='real' name='temp' ordinal='10' />
+              <column datatype='real' name='atemp' ordinal='11' />
+              <column datatype='real' name='hum' ordinal='12' />
+              <column datatype='real' name='windspeed' ordinal='13' />
+              <column datatype='integer' name='casual' ordinal='14' />
+              <column datatype='integer' name='registered' ordinal='15' />
+              <column datatype='integer' name='cnt' ordinal='16' />
+              <column datatype='real' name='avg_duration' ordinal='17' />
+              <column datatype='string' name='pop_station' ordinal='18' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Bike number (2012Q1-capitalbikeshare-tripdata.csv+)]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[Bike number]' />
+          <map key='[Bike number]' value='[2011-capitalbikeshare-tripdata.csv].[Bike number]' />
+          <map key='[Duration (2012Q1-capitalbikeshare-tripdata.csv+)]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[Duration]' />
+          <map key='[Duration]' value='[2011-capitalbikeshare-tripdata.csv].[Duration]' />
+          <map key='[End date (2012Q1-capitalbikeshare-tripdata.csv+)]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[End date]' />
+          <map key='[End date]' value='[2011-capitalbikeshare-tripdata.csv].[End date]' />
+          <map key='[End station (2012Q1-capitalbikeshare-tripdata.csv+)]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[End station]' />
+          <map key='[End station number (2012Q1-capitalbikeshare-tripdata.csv+)]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[End station number]' />
+          <map key='[End station number]' value='[2011-capitalbikeshare-tripdata.csv].[End station number]' />
+          <map key='[End station]' value='[2011-capitalbikeshare-tripdata.csv].[End station]' />
+          <map key='[F1]' value='[newday.csv].[F1]' />
+          <map key='[Member type (2012Q1-capitalbikeshare-tripdata.csv+)]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[Member type]' />
+          <map key='[Member type]' value='[2011-capitalbikeshare-tripdata.csv].[Member type]' />
+          <map key='[Start date (2012Q1-capitalbikeshare-tripdata.csv+)]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[Start date]' />
+          <map key='[Start date]' value='[2011-capitalbikeshare-tripdata.csv].[Start date]' />
+          <map key='[Start station (2012Q1-capitalbikeshare-tripdata.csv+)]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[Start station]' />
+          <map key='[Start station number (2012Q1-capitalbikeshare-tripdata.csv+)]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[Start station number]' />
+          <map key='[Start station number]' value='[2011-capitalbikeshare-tripdata.csv].[Start station number]' />
+          <map key='[Start station]' value='[2011-capitalbikeshare-tripdata.csv].[Start station]' />
+          <map key='[Table Name]' value='[2012Q1-capitalbikeshare-tripdata.csv+].[Table Name]' />
+          <map key='[atemp]' value='[newday.csv].[atemp]' />
+          <map key='[avg_duration]' value='[newday.csv].[avg_duration]' />
+          <map key='[casual]' value='[newday.csv].[casual]' />
+          <map key='[cnt]' value='[newday.csv].[cnt]' />
+          <map key='[dteday]' value='[newday.csv].[dteday]' />
+          <map key='[holiday]' value='[newday.csv].[holiday]' />
+          <map key='[hum]' value='[newday.csv].[hum]' />
+          <map key='[instant]' value='[newday.csv].[instant]' />
+          <map key='[mnth]' value='[newday.csv].[mnth]' />
+          <map key='[pop_station]' value='[newday.csv].[pop_station]' />
+          <map key='[registered]' value='[newday.csv].[registered]' />
+          <map key='[season]' value='[newday.csv].[season]' />
+          <map key='[temp]' value='[newday.csv].[temp]' />
+          <map key='[weathersit]' value='[newday.csv].[weathersit]' />
+          <map key='[weekday]' value='[newday.csv].[weekday]' />
+          <map key='[windspeed]' value='[newday.csv].[windspeed]' />
+          <map key='[workingday]' value='[newday.csv].[workingday]' />
+          <map key='[yr]' value='[newday.csv].[yr]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration]</local-name>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Start date]</local-name>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias>Start date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[End date]</local-name>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias>End date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start station number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Start station number]</local-name>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias>Start station number</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Start station]</local-name>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias>Start station</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End station number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[End station number]</local-name>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias>End station number</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[End station]</local-name>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias>End station</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bike number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bike number]</local-name>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias>Bike number</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Member type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Member type]</local-name>
+            <parent-name>[2011-capitalbikeshare-tripdata.csv]</parent-name>
+            <remote-alias>Member type</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration (2012Q1-capitalbikeshare-tripdata.csv+)]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Duration</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Start date (2012Q1-capitalbikeshare-tripdata.csv+)]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Start date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[End date (2012Q1-capitalbikeshare-tripdata.csv+)]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>End date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start station number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Start station number (2012Q1-capitalbikeshare-tripdata.csv+)]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Start station number</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Start station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Start station (2012Q1-capitalbikeshare-tripdata.csv+)]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Start station</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End station number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[End station number (2012Q1-capitalbikeshare-tripdata.csv+)]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>End station number</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>End station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[End station (2012Q1-capitalbikeshare-tripdata.csv+)]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>End station</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bike number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bike number (2012Q1-capitalbikeshare-tripdata.csv+)]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Bike number</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Member type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Member type (2012Q1-capitalbikeshare-tripdata.csv+)]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Member type</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[2012Q1-capitalbikeshare-tripdata.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>instant</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[instant]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>instant</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dteday</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[dteday]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>dteday</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yr</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yr]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>yr</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mnth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mnth]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>mnth</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>holiday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[holiday]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>holiday</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weekday]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>weekday</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>workingday</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[workingday]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>workingday</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weathersit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weathersit]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>weathersit</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>temp</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>atemp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[atemp]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>atemp</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hum</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hum]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>hum</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>windspeed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[windspeed]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>windspeed</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>casual</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[casual]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>casual</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>registered</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[registered]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>registered</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cnt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cnt]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>cnt</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_duration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_duration]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>avg_duration</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pop_station</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pop_station]</local-name>
+            <parent-name>[newday.csv]</parent-name>
+            <remote-alias>pop_station</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Atemp' datatype='real' name='[atemp]' role='measure' type='quantitative' />
+      <column caption='Avg Duration' datatype='real' name='[avg_duration]' role='measure' type='quantitative' />
+      <column caption='Casual' datatype='integer' name='[casual]' role='measure' type='quantitative' />
+      <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+      <column caption='Dteday' datatype='date' name='[dteday]' role='dimension' type='ordinal' />
+      <column caption='Holiday' datatype='integer' name='[holiday]' role='measure' type='quantitative' />
+      <column caption='Hum' datatype='real' name='[hum]' role='measure' type='quantitative' />
+      <column caption='Instant' datatype='integer' name='[instant]' role='measure' type='quantitative' />
+      <column caption='Mnth' datatype='integer' name='[mnth]' role='measure' type='quantitative' />
+      <column caption='Pop Station' datatype='string' name='[pop_station]' role='dimension' type='nominal' />
+      <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+      <column caption='Temp' datatype='real' name='[temp]' role='measure' type='quantitative' />
+      <column caption='Weathersit' datatype='integer' name='[weathersit]' role='measure' type='quantitative' />
+      <column caption='Weekday' datatype='integer' name='[weekday]' role='measure' type='quantitative' />
+      <column caption='Windspeed' datatype='real' name='[windspeed]' role='measure' type='quantitative' />
+      <column caption='Workingday' datatype='integer' name='[workingday]' role='measure' type='quantitative' />
+      <column caption='Yr' datatype='integer' name='[yr]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.575673' measure-ordering='alphabetic' measure-percentage='0.424327' rowDisplayCount='10000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Mean Number of Trips Per Hour for each Humidity Observation for Registered Users and Casual Us' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Mean Number of Trips Per Hour for each Humidity Observation for Registered Users and Casual Us' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Mean Number of Trips Per Hour for each Humidity Observation for Registered Users and Casual Us'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='newday(1)' name='federated.1l38u440v1hxnb1d57jly0r6hwtv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l38u440v1hxnb1d57jly0r6hwtv'>
+            <column aggregation='None' caption='Hum (bin)' datatype='integer' name='[Hum (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-3' formula='[hum]' peg='0' size='0.034' />
+            </column>
+            <column caption='Casual' datatype='integer' name='[casual]' role='measure' type='quantitative' />
+            <column caption='Hum' datatype='real' name='[hum]' role='measure' type='quantitative' />
+            <column-instance column='[Hum (bin)]' derivation='None' name='[none:Hum (bin):qk]' pivot='key' type='quantitative' />
+            <column caption='Registered' datatype='integer' name='[registered]' role='measure' type='quantitative' />
+            <column-instance column='[casual]' derivation='Sum' name='[sum:casual:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[registered]' derivation='Sum' name='[sum:registered:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:registered:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:casual:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:registered:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <encodings>
+              <color column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:casual:qk] + [federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:registered:qk])</rows>
+        <cols>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[none:Hum (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[Hum (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{67C0B78F-EFB0-4B00-8D67-9045519DE8F1}' />
+    </worksheet>
+    <worksheet name='Number of Trips Per Day as Related to Average Temperature Each Day'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='newday(1)' name='federated.1l38u440v1hxnb1d57jly0r6hwtv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l38u440v1hxnb1d57jly0r6hwtv'>
+            <column caption='Cnt' datatype='integer' name='[cnt]' role='measure' type='quantitative' />
+            <column caption='Dteday' datatype='date' name='[dteday]' role='dimension' type='ordinal' />
+            <column-instance column='[dteday]' derivation='Month' name='[mn:dteday:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[cnt]' derivation='Sum' name='[sum:cnt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[temp]' derivation='Sum' name='[sum:temp:qk]' pivot='key' type='quantitative' />
+            <column caption='Temp' datatype='real' name='[temp]' role='measure' type='quantitative' />
+            <column-instance column='[dteday]' derivation='Year' name='[yr:dteday:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:temp:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:temp:qk]' scope='rows' value=' MeanTemperature' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[yr:dteday:ok]' />
+              <color column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:cnt:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[yr:dteday:ok]' />
+              <color column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:temp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[yr:dteday:ok]' />
+              <color column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:cnt:qk] + [federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:temp:qk])</rows>
+        <cols>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[mn:dteday:ok]</cols>
+      </table>
+      <simple-id uuid='{33F8C412-0651-4C30-B55D-480BD8EE7339}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='newday(1)' name='federated.1l38u440v1hxnb1d57jly0r6hwtv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l38u440v1hxnb1d57jly0r6hwtv'>
+            <column caption='Mnth' datatype='integer' name='[mnth]' role='measure' type='quantitative' />
+            <column-instance column='[mnth]' derivation='Sum' name='[sum:mnth:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:mnth:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4347D7AF-6D90-4F47-974C-C9544F3105C4}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='106'>
+    <window class='worksheet' name='Number of Trips Per Day as Related to Average Temperature Each Day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[yr:dteday:ok]&#10;[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]</field>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[none:pop_station:nk]</field>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[yr:dteday:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E8282F3B-9888-44EB-9A58-846D4768FDCB}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Mean Number of Trips Per Hour for each Humidity Observation for Registered Users and Casual Us'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[none:Hum (bin):qk]</field>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[none:hum:ok]</field>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[none:hum:qk]</field>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:casual:qk]</field>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:cnt:qk]</field>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:weathersit:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AD9642A3-19CC-467A-B0D6-079B41047F88}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[:Measure Names]</field>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[none:pop_station:nk]</field>
+            <field>[federated.1l38u440v1hxnb1d57jly0r6hwtv].[sum:weathersit:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B4907E60-21B3-4397-AF39-594C8B81BD91}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Mean Number of Trips Per Hour for each Humidity Observation for Registered Users and Casual Us' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Number of Trips Per Day as Related to Average Temperature Each Day' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='29' name='Sheet 3' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAdCAYAAAAaeWr3AAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAELElEQVRYhe1ZS0hqaxT+ih5QUFApYS+zB9TARoIFQUFILwKrUYT0gKCIIgsKKmjYKKgg
+      0EGDJr3I6GX0gGpQGYRFg2TTk1ICFQtJQ03XGZx7vUgePbe67Qunb7bX+tb3r//b/It/s0OI
+      iPAHI5TtBtjGtwFsN8A2vg1guwG28W0A2w2wjW8D2G6AbXwbwHYDbOPbALYbYBt/vAFhny3o
+      dDoxNDSEzc1NtLS0oKWlJSBfqVRCqVT6zUVHR2N8fBxCodAbs9vtmJiYgFqthtVqRXR0NAoL
+      C9HR0QEul+tTbzQaMTY2hp2dHTgcDsTFxUEikaCtrQ1RUVEA/gMDNBoNnp6ekJ+f/1v8X5m0
+      vLyM+fl58Pl8b8xqtaK7uxtJSUmYnZ0Fh8OB1WrF+vo6bm5ufAzQ6/WQy+UoLi7G+vo6YmJi
+      YDKZsLKyAr1ej+zs7J9E+kRYLBZqamoijUZDvb29pFAo3q3V2NhIS0tLPrHR0VEaHBwkh8MR
+      sNblclFPTw8pFApyu90BuZ82AzweD2ZmZpCRkQGRSPRhPbvdjoKCAu+zyWSCVqtFXV0dIiIi
+      AtZeXl7CZDJBKpUiNDTwFj/NgPPzcxwcHKChoSHoosHw8vKC8vJyJCQkeGMMwyA8PBwpKSlB
+      67VaLXg8HuLj44NyP2UGOJ1OTE5OQiqVgsfjfVjv7OwMZWVlPrG7uzvExMTg8PAQU1NTuLi4
+      gMvlAofDQWtrKyorK73GX19fg8PhQKVSYXp6Gvf39wCA1NRUyOVyiMXif17Suw/pXzAYDFRf
+      X09ardYn/t4ZcHx8TFKp9E1coVBQb2+v3xqNRkO1tbX08PAQdO2FhQVqbGyk5+dnIvrgDPB4
+      PJidnUVOTg7y8vI+IgUAeH19xeLiIoqKit7kBAIBzGYz7Hb7m1x6ejpCQkJgNBq93Lu7O79r
+      ZGZm4vn5GTabDcAHj4DZbMbW1haMRiNUKpVfjlKpRElJCYaHh4PqXV5eQqfTQSaTvcmlpaXh
+      8fERBoMBWVlZAXVyc3Oxvb0Ni8WCuLi4gNwPGcDlcqFWq/3m+vr6IBAIgl6E/obH48Hc3Bzy
+      8vKQmZn5Jp+eng4+n4/V1VV0dnb6DFqdToewsDAkJycDAIRCISIjI7G7u4vq6mofndPTUyQm
+      JiI2NvZn4F8f0t+Ev3PocrlILpdTc3Mz2Ww2nxzDMFRdXU06ne6XmldXVySVSmliYoJsNhu5
+      3W7a29ujqqoqWltb8+EeHR1RaWkpqVQqcjqd5HQ6SaVSUUVFBZ2cnHh5X2qATqcjiURCGxsb
+      PnG3200jIyPU399PLpcroK7BYKCuri4Si8UkEomopqaG9vf3/V54GIYhmUxGIpGIRCIRyWQy
+      YhjGhxNC9HW/xsbGxmCxWDAwMICwsE+/hb8LX/Y1aDKZcHt7i/b29v/N5gHgB+ErrgHU0slH
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
